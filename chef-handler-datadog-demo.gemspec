@@ -1,12 +1,12 @@
 # encoding: utf-8
-require File.expand_path('../lib/chef_handler_datadog', __FILE__)
+require File.expand_path('../lib/chef_handler_datadog_demo', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.name          = 'chef-handler-datadog'
+  gem.name          = 'chef-handler-datadog-demo'
   gem.summary       = 'Chef Handler reports events and metrics to Datadog'
   gem.description   = 'This Handler will report the events and metrics for a chef-client run to Datadog.'
   gem.license       = 'BSD'
-  gem.version       = ChefHandlerDatadog::VERSION
+  gem.version       = ChefHandlerDatadogDemo::VERSION
 
   gem.files         = `git ls-files`.split($\) # rubocop:disable SpecialGlobalVars
   gem.executables   = gem.files.grep(%r{^bin\/}).map { |f| File.basename(f) }

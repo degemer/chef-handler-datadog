@@ -3,14 +3,14 @@ require 'rubygems'
 require 'chef/handler'
 require 'chef/mash'
 require 'dogapi'
-require_relative 'datadog_chef_metrics'
-require_relative 'datadog_chef_tags'
-require_relative 'datadog_chef_events'
+require_relative 'datadog_demo_chef_metrics'
+require_relative 'datadog_demo_chef_tags'
+require_relative 'datadog_demo_chef_events'
 
 class Chef
   class Handler
     # Datadog handler to send Chef run details to Datadog
-    class Datadog < Chef::Handler
+    class DatadogDemo < Chef::Handler
       attr_reader :config
 
       # For the tags to work, the client must have created an Application Key on the
